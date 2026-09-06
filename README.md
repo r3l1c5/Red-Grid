@@ -189,4 +189,4 @@ This project is distributed under the **MIT License**. See the `LICENSE` file fo
 
 ## Author
 
-**R3L1C5**
+**r3l1c5**
