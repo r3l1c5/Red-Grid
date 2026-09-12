@@ -10,7 +10,7 @@ It simulates common adware characteristics by:
 * recording simulated tracking/telemetry events
 * producing a behavioral report
 
-All generated data stays inside the local `redgrid_lab` directory.
+All generated data stays inside the local redgrid_lab directory.
 """
 
 from **future** import annotations
@@ -59,12 +59,10 @@ def _write_json(filename: str, data) -> Path:
 """Write simulation data as JSON."""
 path = ADWARE_DIR / filename
 
-```
 with path.open("w", encoding="utf-8") as file:
     json.dump(data, file, indent=4)
 
 return path
-```
 
 def _generate_configuration() -> Path:
 """Create a fake adware configuration file."""
@@ -83,15 +81,12 @@ configuration = {
 "persistence_enabled": False,
 }
 
-```
 return _write_json("simulated_config.json", configuration)
-```
 
 def _simulate_ad_events(count: int = 5) -> list[dict]:
 """Generate simulated advertisement events."""
 events = []
 
-```
 for event_id in range(1, count + 1):
     advertisement = random.choice(FAKE_ADS)
 
@@ -115,13 +110,11 @@ for event_id in range(1, count + 1):
     time.sleep(0.2)
 
 return events
-```
 
 def _simulate_tracking(events: list[dict]) -> list[dict]:
 """Generate harmless fake telemetry events."""
 telemetry = []
 
-```
 fake_pages = [
     "/home",
     "/products",
@@ -143,13 +136,14 @@ for index, event in enumerate(events, start=1):
     telemetry.append(record)
 
 return telemetry
-```
 
-def _generate_report(events: list[dict], telemetry: list[dict]) -> Path:
+def _generate_report(
+events: list[dict],
+telemetry: list[dict],
+) -> Path:
 """Create a human-readable behavioral report."""
 report = ADWARE_DIR / "behavior_report.txt"
 
-```
 lines = [
     "Red-Grid Adware Simulation Report",
     "=" * 36,
@@ -180,14 +174,12 @@ lines = [
 report.write_text("\n".join(lines), encoding="utf-8")
 
 return report
-```
 
 def simulate() -> None:
 """Run the controlled adware behavior simulation."""
 print("Adware Behavior Simulation")
 print("=" * 28)
 
-```
 print()
 print("[SIMULATION] Initializing isolated laboratory environment...")
 
@@ -226,10 +218,7 @@ print(f"[+] Telemetry log: {telemetry_file}")
 print(f"[+] Behavior report: {report}")
 
 print()
-print("[SIMULATION] No real advertising, tracking, persistence,")
-print("[SIMULATION] browser modification, or network communication occurred.")
-```
-
-:::("")]
-
-// end of code?
+print(
+    "[SIMULATION] No real advertising, tracking, persistence, "
+    "browser modification, or network communication occurred."
+)
