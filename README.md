@@ -162,9 +162,9 @@ __pycache__/
 are intentionally excluded from version control.
 
 ## Architecture
-```
-Red-Grid uses a simple modular architecture:
 
+Red-Grid uses a simple modular architecture:
+```
                          User
                            |
                            v
@@ -214,11 +214,11 @@ The keylogger module uses predefined synthetic input rather than capturing keybo
 
 It does not:
 
-Install keyboard hooks
-Monitor the real keyboard
-Capture real passwords
-Capture credentials
-Record user activity
+         Install keyboard hooks
+         Monitor the real keyboard
+         Capture real passwords
+         Capture credentials
+         Record user activity
 
 ## Ransomware
 
@@ -226,11 +226,11 @@ The ransomware module operates on synthetic files created inside the Red-Grid ru
 
 It does not:
 
-Encrypt real user files
-Search arbitrary directories
-Destroy data
-Modify unrelated files
-Demand real payment
+         Encrypt real user files
+         Search arbitrary directories
+         Destroy data
+         Modify unrelated files
+         Demand real payment
 
 The simulated operation is reversible.
 
@@ -240,11 +240,11 @@ The worm module uses predefined fictional hosts to demonstrate propagation conce
 
 It does not:
 
-Scan real networks
-Connect to remote systems
-Exploit vulnerabilities
-Propagate between machines
-Download or execute remote payloads
+         Scan real networks
+         Connect to remote systems
+         Exploit vulnerabilities
+         Propagate between machines
+         Download or execute remote payloads
 
 ## Stealer
 
@@ -252,12 +252,12 @@ The stealer module works with synthetic demonstration data.
 
 It does not access:
 
-Browser databases
-Password stores
-Real credentials
-Authentication tokens
-Payment information
-Private user files
+         Browser databases
+         Password stores
+         Real credentials
+         Authentication tokens
+         Payment information
+         Private user files
 
 ## Trojan
 
@@ -265,11 +265,11 @@ The Trojan module demonstrates deceptive delivery and payload concepts using a b
 
 It does not:
 
-Execute malicious payloads
-Execute arbitrary commands
-Establish persistence
-Create remote access
-Communicate with command-and-control infrastructure
+         Execute malicious payloads
+         Execute arbitrary commands
+         Establish persistence
+         Create remote access
+         Communicate with command-and-control infrastructure
 
 ## Rootkit
 
@@ -277,12 +277,12 @@ The rootkit module demonstrates the concept of hidden objects using a synthetic 
 
 It does not:
 
-Hide real processes
-Hide real files
-Modify the operating system
-Install drivers
-Modify the kernel
-Modify security configuration
+         Hide real processes
+         Hide real files
+         Modify the operating system
+         Install drivers
+         Modify the kernel
+         Modify security configuration
 
 ## Backdoor
 
@@ -290,12 +290,12 @@ The backdoor module demonstrates command-access concepts using a predefined loca
 
 It does not:
 
-Open network listeners
-Create sockets for remote access
-Execute arbitrary shell commands
-Establish command-and-control communication
-Provide a remote shell
-Create persistence
+         Open network listeners
+         Create sockets for remote access
+         Execute arbitrary shell commands
+         Establish command-and-control communication
+         Provide a remote shell
+         Create persistence
 
 ## Adware
 
@@ -303,11 +303,11 @@ The adware module demonstrates simulated advertisements and synthetic telemetry.
 
 It does not:
 
-Contact external advertising services
-Track real users
-Send telemetry over the network
-Install browser extensions
-Create persistence
+         Contact external advertising services
+         Track real users
+         Send telemetry over the network
+         Install browser extensions
+         Create persistence
 
 ## File Infector
 
@@ -317,11 +317,11 @@ It adds a harmless simulation marker and does not inject executable code.
 
 It does not:
 
-Modify real user files
-Modify executable binaries
-Inject executable code
-Self-replicate
-Spread between systems
+         Modify real user files
+         Modify executable binaries
+         Inject executable code
+         Self-replicate
+         Spread between systems
 
 ## Bash Persistence
 
@@ -329,34 +329,34 @@ The Bash persistence module demonstrates common persistence concepts such as she
 
 It does not modify:
 
-.bashrc
-.profile
-Actual crontab entries
-Startup configuration
-System persistence mechanisms
+         .bashrc
+         .profile
+         Actual crontab entries
+         Startup configuration
+         System persistence mechanisms
 
 ## Safety Boundaries
 
 The current Red-Grid implementation does not perform the following real-world actions:
 
-*Real keyboard capture
-*Credential theft
-*Real secret collection
-*Destructive file encryption
-*Modification of arbitrary user files
-*Real network scanning
-*Network propagation
-*Exploitation of remote systems
-*Command-and-control communication
-*Network listeners
-*Remote shells
-*Arbitrary command execution
-*Real persistence
-*Process hiding
-*File hiding
-*Kernel modification
-*Driver installation
-*Security configuration modification
+* Real keyboard capture
+* Credential theft
+* Real secret collection
+* Destructive file encryption
+* Modification of arbitrary user files
+* Real network scanning
+* Network propagation
+* Exploitation of remote systems
+* Command-and-control communication
+* Network listeners
+* Remote shells
+* Arbitrary command execution
+* Real persistence
+* Process hiding
+* File hiding
+* Kernel modification
+* Driver installation
+* Security configuration modification
 
 The project is intentionally limited to controlled simulations and synthetic data.
 
@@ -364,25 +364,25 @@ The project is intentionally limited to controlled simulations and synthetic dat
 
 Each module can be tested independently.
 ```
-Keylogger
+## Keylogger
 python -m modules.keylogger
-Ransomware
+## Ransomware
 python -m modules.ransomware
-Worm
+## Worm
 python -m modules.worm
-Stealer
+## Stealer
 python -m modules.stealer
-Trojan
+## Trojan
 python -m modules.trojan
-Rootkit
+## Rootkit
 python -m modules.rootkit
-Backdoor
+## Backdoor
 python -m modules.backdoor
-Adware
+## Adware
 python -m modules.adware
-File Infector
+## File Infector
 python -m modules.file_infector
-Bash Persistence
+## Bash Persistence
 python -m modules.bash_persistence
 ```
 ## Syntax Validation
@@ -409,19 +409,19 @@ python -m py_compile malware_simulation_lab.py
 
 Red-Grid provides practical experience with:
 
-*Malware behavior concepts
-*Malware simulation design
-*Python modules and packages
-*CLI application development
-*Menu-driven applications
-*Function-based architecture
-*Python virtual environments
-*Standard-library-only Python development
-*Linux command-line workflows
-*Cross-platform Python execution
-*Controlled cybersecurity experimentation
-*Defensive security concepts
-*Safe laboratory design
+* Malware behavior concepts
+* Malware simulation design
+* Python modules and packages
+* CLI application development
+* Menu-driven applications
+* Function-based architecture
+* Python virtual environments
+* Standard-library-only Python development
+* Linux command-line workflows
+* Cross-platform Python execution
+* Controlled cybersecurity experimentation
+* Defensive security concepts
+* Safe laboratory design
 
 ## Why This Project Exists
 
@@ -444,12 +444,12 @@ The goal is to understand these concepts while keeping the implementation safe a
 
 Red-Grid is intended for:
 
-*Cybersecurity education
-*Malware behavior research
-*Defensive security training
-*Authorized laboratory environments
-*Security portfolio development
-*Interview and technical learning
+* Cybersecurity education
+* Malware behavior research
+* Defensive security training
+* Authorized laboratory environments
+* Security portfolio development
+* Interview and technical learning
 
 Run the project only on systems and environments where you have appropriate authorization.
 Do not modify the project to introduce harmful functionality or deploy it against systems without authorization.
