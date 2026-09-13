@@ -1,2 +1,0 @@
-cryptography>=42,<47
-keyboard>=0.13,<1
